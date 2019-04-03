@@ -56,8 +56,6 @@ public cargarEquipo(){
     this.Equipo = resp;
     //console.log(resp);
   });
-
-
 }
 
 
