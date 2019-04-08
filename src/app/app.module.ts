@@ -1,44 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
 
+import { HttpClientModule } from '@angular/common/http';
 
-//rutas
-import {app_routing} from "./app.routes";
-//servicios
-import {InformacionService} from "./services/informacion.service";
-
-
-//componentes
-
-
-
+// Rutas
 import { AppRoutingModule } from './app-routing.module';
+
+
+
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { PrincipalComponent } from './components/principal/principal.component';
-import { AboutComponent } from './components/about/about.component';
-import { ItemComponent } from './components/item/item.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { PortafolioComponent } from './pages/portafolio/portafolio.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ItemComponent } from './pages/item/item.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PrincipalComponent,
+    PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-HttpClientModule,
-  AppRoutingModule,
-  app_routing
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [
-    InformacionService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
