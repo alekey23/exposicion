@@ -1,0 +1,63 @@
+
+  
+  
+<div align="center">
+
+
+  
+  <div>
+      <img src="https://firebasestorage.googleapis.com/v0/b/angular-d6e6b.appspot.com/o/llave_huella-digital%20(1).jpg?alt=media&token=2d3034bc-622d-4719-8467-a8c1f6214348"
+
+      alt="" class="au-mb-3">
+      </div>
+
+    <div *ngFor="let fingerprint of infoService.fingerprint | keyvalue"  class="animated fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3" align="center">
+        <h5 class="ae-u-bolder au-mt-2">{{ fingerprint.value }}</h5>
+      </div>
+
+
+
+
+
+
+      <div>
+          <img src="https://firebasestorage.googleapis.com/v0/b/angular-d6e6b.appspot.com/o/apple_maps_vs_google_maps_1200new.jpg?alt=media&token=cf84b794-0b4b-4641-b35b-9974c079cfca"
+    
+          alt="" class="au-mb-3">
+          </div>
+    
+        <div *ngFor="let localizacion of infoService.localizacion | keyvalue"  class="animated fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3"   align="center">
+            <h5 class="ae-u-bolder au-mt-2">{{ localizacion.value }}</h5>
+          </div>
+
+
+
+
+
+
+
+          <div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/angular-d6e6b.appspot.com/o/56006685-alarma-si%CC%81mbolo-de-timbre-boto%CC%81n-cuadrado-rojo.jpg?alt=media&token=f66e89b4-698d-4fc7-bc1a-f08d9119ce17"
+        
+              alt="" class="au-mb-3">
+              </div>
+        
+            <div *ngFor="let alarma of infoService.alarma | keyvalue"  class="animated fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3"  align="center">
+                <h5 class="ae-u-bolder au-mt-2">{{ alarma.value }}</h5>
+              </div>
+    
+    
+            </div>
+          
+     
+    
+
+  
+  
+  <p class="au-flex au-pt-4 group-buttons"><a href="portfolio.html" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Regresar al home<span class="arrow-cont">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#arrow"></use>
+        </svg></span></a></p>
+
+
+

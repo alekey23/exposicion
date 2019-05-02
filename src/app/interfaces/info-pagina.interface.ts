@@ -1,4 +1,3 @@
-
 export interface InfoPagina {
   titulo?: string;
   email?: string;
@@ -9,4 +8,5 @@ export interface InfoPagina {
   instagram?: string;
   tublr?: string;
   equipo_trabajo?: any[];
+  datos_fingerpritn?: any[];
 }
