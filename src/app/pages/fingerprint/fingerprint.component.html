@@ -6,9 +6,15 @@
 
   
   <div>
+
       <img src="https://firebasestorage.googleapis.com/v0/b/angular-d6e6b.appspot.com/o/llave_huella-digital%20(1).jpg?alt=media&token=2d3034bc-622d-4719-8467-a8c1f6214348"
 
       alt="" class="au-mb-3">
+
+      <p>
+        El sensor de huella indica si tiene acceso permitido o no a la vivienda <br> o en caso del automovil, si puede encenderlo<br>
+        concedido=permitido
+      </p>
       </div>
 
     <div *ngFor="let fingerprint of infoService.fingerprint | keyvalue"  class="animated fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3" align="center">
@@ -24,6 +30,12 @@
           <img src="https://firebasestorage.googleapis.com/v0/b/angular-d6e6b.appspot.com/o/apple_maps_vs_google_maps_1200new.jpg?alt=media&token=cf84b794-0b4b-4641-b35b-9974c079cfca"
     
           alt="" class="au-mb-3">
+
+          <p>
+              La geolocalización manda datos en tiempo real sobre donde se encuentra el vehiculo <br>
+              
+            </p>
+
           </div>
     
         <div *ngFor="let localizacion of infoService.localizacion | keyvalue"  class="animated fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3"   align="center">
@@ -40,6 +52,12 @@
               <img src="https://firebasestorage.googleapis.com/v0/b/angular-d6e6b.appspot.com/o/56006685-alarma-si%CC%81mbolo-de-timbre-boto%CC%81n-cuadrado-rojo.jpg?alt=media&token=f66e89b4-698d-4fc7-bc1a-f08d9119ce17"
         
               alt="" class="au-mb-3">
+
+              <p>
+                  Indica si la alarma se encuentra sonando o esta inactiva
+                </p>
+
+
               </div>
         
             <div *ngFor="let alarma of infoService.alarma | keyvalue"  class="animated fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3"  align="center">
